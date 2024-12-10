@@ -13,7 +13,7 @@ void printArray(int* arr, size_t size)
 
 void insertAt(int** arr, size_t* size, size_t index, int element)
 {
-	if (index > size)
+	if (index > *size)
 	{
 		printf("Invalid index!\n");
 		return;
@@ -100,7 +100,7 @@ int main()
 	printf("Enter the new element: ");
 	scanf_s("%d", &newEl);
 	printf("and the index you want to be inserted: ");
-	scanf_s("%d", &index);
+	scanf_s("%zu", &index);
 	insertAt(&arr, &size, index, newEl);
 	printArray(arr, size);
 
