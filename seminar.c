@@ -95,7 +95,8 @@ int main()
 	}
 	printArray(arr, size);
 
-	int newEl = 0, index = 0;
+	int newEl = 0;
+	size_t index = 0;
 	printf("Enter the new element: ");
 	scanf_s("%d", &newEl);
 	printf("and the index you want to be inserted: ");
